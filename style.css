@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #fff;
+  background: #b01318;
+}
+
+.top-bar {
+  background: #000;
+  color: #fff;
+  padding: 14px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-bar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+
+.top-nav {
+  list-style: none;
+  display: flex;
+  gap: 26px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: #ddd;
+}
+
+.top-nav a:hover {
+  color: #ffcf4a;
+}
+
+.top-nav .order-now a {
+  color: #ffcf4a;
+  font-weight: 600;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 20px 60px;
+
+  background-image: url('musume-bg.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  column-gap: 40px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.hero-kicker {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  font-family: "Bebas Neue", system-ui, sans-serif;
+  font-size: 44px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin-top: 6px;
+}
+
+.hero-subtitle {
+  margin-top: 8px;
+  font-size: 14px;
+  max-width: 420px;
+}
+
+.hero-actions {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.25s ease,
+              background-color 0.25s ease,
+              color 0.25s ease,
+              box-shadow 0.25s ease,
+              border-color 0.25s ease;
+}
+
+.btn-primary {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+.btn-primary:hover{
+  background: transparent;
+  color: #ffcf4a;
+  border-color: #3b0507;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn-outline:hover {
+  background: #fff;
+  color: #3b0507;
+}
+
+.btn-small {
+  padding: 8px 18px;
+}
+
+.hero-media {
+  position: relative;
+}
+
+.hero-img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.55);
+  object-fit: cover;
+}
+
+.section-title {
+  text-align: center;
+  font-family: "Bebas Neue", system-ui, sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.section-sub {
+  text-align: center;
+  margin-top: 4px;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.feature-section {
+  margin-top: 36px;
+}
+
+.feature-grid {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.feature-card {
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  padding: 16px 18px;
+  box-shadow: 0 8px 2px rgba(0, 0, 0, 0.35);
+}
+
+.feature-name {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin-bottom: 6px;
+}
+
+.feature-text {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.feature-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  text-decoration: none;
+  color: #ffcf4a;
+}
+
+.feeature-link:hover {
+  text-decoration: underline;
+}
+
+.feature-new .feature-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tag-new {
+  background: #ffcf4a;
+  color: #3b0507;
+  padding: 1px 8px;
+  border-radius: 999px;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  font-weight: 700;
+}
+
+.menu-section {
+  margin-top: 40px;
+}
+
+.menu-layout {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: minmax(0, 2.2fr) minmax(0, 1fr);
+  column-gap: 40px;
+  align-items: flex-start;
+}
+
+.menu-left {
+  width: 100%;
+}
+
+.menu-right {
+  display: flex;
+  justify-content: center;
+}
+
+.cheesy-note {
+  font-family: "Poppins", cursive;
+  font-size: 20px;
+  line-height: 1.3px;
+  text-align: right;
+  font-style: italic;
+  margin: 80px;
+}
+
+.menu-group {
+  margin-bottom: 18px;
+}
+
+.menu-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  column-gap: 24px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.menu-name-block {
+  position: relative;
+  padding-block: 3px 1px;
+}
+
+.name-label {
+  display: inline-block;
+  background: #111;
+  padding: 6px 18px;
+  border-radius: 22px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  font-size: 13px;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.6);
+}
+
+.melt-group .name-label {
+  background: #1a1a1a;
+}
+
+.menu-sizes {
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.size-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 0;
+}
+
+.size-label {
+  letter-spacing: 0.16em;
+}
+
+.size-price {
+  letter-spacing: 700;
+}
+
+.new-menu-section {
+  margin-top: 12px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.new-menu-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.name-label--yellow {
+  background: #ffcf4a;
+  color: #3b0507;
+}
+
+.addons-section {
+  margin-top: 34px;
+}
+
+.addons-title {
+  text-align: center;
+  font-family: "Bebas Neue", system-ui, sans-serif;
+  font-size: 22px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.addons-sub {
+  text-align: center;
+  margin-top: 2px;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.addons-list {
+  margin: 18px auto 0;
+  max-width: 360px;
+}
+
+.addon-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  margin-bottom: 6px;
+}
+
+.addon-name {
+  font-weight: 600;
+}
+
+.tray-section {
+  margin-top: 40px;
+}
+
+.tray-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 40px;
+  row-gap: 24px;
+  margin-top: 18px;
+}
+
+.tray-col {
+  width: 100%;
+}
+
+.tray-subtitle {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin-bottom: 10px;
+}
+
+.price-list {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+  letter-spacing: 0.06em;
+}
+
+.assorted-title {
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.bandoru-card {
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  padding-top: 8px;
+  margin-bottom: 10px;
+  font-size: 11px;
+}
+
+.bandoru-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+
+.bandoru-name {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-weight: 700;
+}
+
+.bandoru-price {
+  font-weight: 700;
+}
+
+.bandoru-list {
+  list-style: none;
+  line-height: 1.5;
+}
+
+.reviews-section {
+  margin-top: 40px;
+}
+
+.reviews-grid {
+  margin: 18px auto 0;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.review-card {
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+.review-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.review-card:hover .review-img {
+  transform: scale(1.05);
+}
+
+.contact-section {
+  margin-top: 40px;
+}
+
+.contact-card {
+  margin: 18px auto 0 ;
+  max-width: 600px;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 16px;
+  padding: 18px 20px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.4);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.order-form {
+  margin-top: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.order-form label{
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+.order-form input,
+.order-form textarea,
+.order-form select {
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 8px 10px;
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  font-size: 13px;
+  outline: none;
+}
+
+.order-form input::placeholder,
+.order-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.order-form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.order-form button {
+  margin-top: 6px;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 20px;
+  }
+
+  .hero-media {
+    order: -1;
+  }
+
+  .menu-layout {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 20px;
+  }
+
+  .menu-right {
+    justify-content: flex-start;
+  }
+
+  .cheesy-note {
+    display: none;
+  }
+
+  .tray-columns {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    padding: 12px 16px;
+  }
+
+  .top-nav {
+    display: none;
+  }
+
+  .page {
+    padding-inline: 16px;
+  }
+
+  .hero-title {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 4px;
+  }
+
+  .contact-card {
+    padding: 16px;
+  }
+}
